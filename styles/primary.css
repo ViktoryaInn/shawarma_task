@@ -28,6 +28,7 @@
     border: none;
     border-radius: 3px;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -56,7 +57,7 @@
         padding-right: 12px;
         background: right / contain no-repeat url(../img/person-shawarma.png);
         background-size: 180px 179px;
-        background-position-x: 128px;
+        background-position-x: 110px;
         background-position-y: 174px;
         display: block;
     }
