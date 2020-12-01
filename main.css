@@ -2,6 +2,8 @@
 @import "styles/header.css";
 @import "styles/primary.css";
 @import "styles/secondary.css";
+@import "styles/catalog.css";
+@import "styles/form.css";
 
 *{
     box-sizing: border-box;
@@ -35,7 +37,6 @@ h2{
     .container{
         width: 100%;
     }
-    
 }
 
 @media(max-width: 768px){

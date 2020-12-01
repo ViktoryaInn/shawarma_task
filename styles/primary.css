@@ -35,7 +35,7 @@
     background-color: #C33500;
 }
 
-@media(max-width: 768px){
+@media(max-width: 992px){
     .primary{
         background-color: #ffffff;
     }
@@ -51,14 +51,14 @@
     }
 }
 
-@media(max-width: 320px){
+@media(max-width: 767px){
     .primary__wrap{
         padding-left: 26px;
         padding-right: 12px;
         background: right / contain no-repeat url(../img/person-shawarma.png);
         background-size: 180px 179px;
-        background-position-x: 110px;
-        background-position-y: 174px;
+        background-position-x: 97.5%;
+        background-position-y: 78%;
         display: block;
     }
     .primary__title{

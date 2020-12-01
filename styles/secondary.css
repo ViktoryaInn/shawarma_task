@@ -19,7 +19,7 @@
 
 .info__list{
     margin: 0;
-    margin-top: 100px;
+    margin-top: 60px;
     list-style-type: none;
     counter-reset: num;
     font-family: 'UbuntuRegular';
@@ -47,23 +47,60 @@
     text-transform: uppercase;
 }
 
-@media(max-width: 768px){
+@media(max-width: 992px){
+    .secondary{
+        background-color: #ffffff;
+    }
     .secondary__wrap{
         height: 641px;
-        padding: 35px 20px 138px;
+        padding: 35px 0 138px;
         background: left / contain no-repeat url(../img/shawarma\ 1.png);
         background-size: 299px auto;
-        background-position-x: 449px;
+        background-position-x: 97%;
         background-position-y: 407px;
     }
     .secondary__title{
         font-size: 30px;
         line-height: 34px;
     }
+    .secondary__info{
+        display: flex;
+        justify-content: center;
+    }
     .info__list{
-        margin-top: 58px;
+        margin-top: 18px;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: -0.2px;
+    }
+    .list__item::before{
+        font-size: 32px;
     }
     .secondary__info{
         float: none;
+    }
+}
+
+@media(max-width: 767px){
+    .secondary__wrap{
+        padding: 35px 20px;
+        height: fit-content;
+        background: none;
+    }
+    .secondary__title{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .info__list{
+        margin-top: 35px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .list__item{
+        padding-left: 55px;
+        margin: 20px 0;
+    }
+    .list__item::before{
+        font-size: 24px;
     }
 }

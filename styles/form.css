@@ -1,0 +1,67 @@
+.form__wrap{
+    padding: 40px 20px 29px;
+    width: 100%;
+    background: center / contain no-repeat url(../img/Фон\ 1.png);
+    background-size: 100% 340px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-send{
+    width: 516px;
+}
+
+.form-send__title{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'UbuntuRegular' ;
+    font-size: 36px;
+    line-height: 41px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-send__input{
+    margin-bottom: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input__label{
+    margin: 0;
+    font-family: 'UbuntuRegular' ;
+    font-size: 30px;
+    line-height: 34px;
+    color: #ffffff;
+}
+
+.input{
+    margin-left: 20px;
+    width: 350px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.form-send__send{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-text{
+    margin: 0;
+    width: 201px;
+    height: 48px;
+    font-family: 'UbuntuRegular' ;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.btn-send{
+    width: 205px;
+}
