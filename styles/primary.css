@@ -34,6 +34,9 @@
 }
 
 @media(max-width: 768px){
+    .primary{
+        background-color: #ffffff;
+    }
     .primary__title{
         font-size: 24px;
         line-height: 28px;
