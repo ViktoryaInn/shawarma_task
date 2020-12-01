@@ -1,0 +1,48 @@
+.secondary__wrap{
+    width: 100%;
+    height: 683px;
+    padding: 35px 22px 131px;
+    background: left / contain no-repeat url(../img/shawarma\ 1.png);
+    background-size: 600px auto;
+    background-position-x: 20px;
+    background-position-y: 144px;
+}
+
+.secondary__title{
+    margin: 0;
+    text-align: center;
+}
+
+.secondary__info{
+    float: right;
+}
+
+.info__list{
+    margin: 0;
+    margin-top: 100px;
+    list-style-type: none;
+    counter-reset: num;
+    font-family: 'UbuntuRegular';
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -0.2px;
+}
+
+.list__item{
+    position: relative;
+    display: list-item;
+    margin: 40px 0;
+    padding-left: 70px;
+}
+
+.list__item::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(num);
+    counter-increment: num;
+    font-family: 'UbuntuMedium';
+    font-size: 36px;
+    color: #E63E00;
+    text-transform: uppercase;
+}

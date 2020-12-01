@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "styles/header.css";
 @import "styles/primary.css";
+@import "styles/secondary.css";
 
 *{
     box-sizing: border-box;
@@ -16,8 +17,30 @@ body{
     display: block;
 }
 
+h2{
+    font-family: 'UbuntuMedium';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 41px;
+    color: black;
+    text-transform: uppercase;
+}
+
 .container{
     margin: 0 auto;
     width: 1200px;
-    padding: 0;
+    /*padding: 0;*/
 }
+
+@media(max-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media(max-width: 320px){
+    .container{
+        width: 320px;
+    }
+}
+
