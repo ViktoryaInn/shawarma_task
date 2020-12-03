@@ -1,8 +1,8 @@
 .form__wrap{
     padding: 40px 20px 29px;
     width: 100%;
-    background: center / contain no-repeat url(../img/Фон\ 1.png);
-    background-size: 100% 340px;
+    background: center no-repeat url(../img/Фон\ 1.png);
+    background-size: cover;
     display: flex;
     justify-content: flex-end;
 }
@@ -64,4 +64,54 @@
 
 .btn-send{
     width: 205px;
+}
+
+@media(max-width: 992px){  
+    .form__wrap{
+        padding-top: 34px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px){
+    .form__wrap{
+        height: 256px;
+        padding: 22px 20px 19px;
+        background: center  no-repeat url(../img/bg-form\ 2.png);
+        background-size: cover;
+    }
+    .form-send__title{
+        margin-bottom: 25px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .form-send__input{
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 280px;
+        justify-content: space-between;
+    }
+    .input__label{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .input{
+        height: 21px;
+        width: 190px;
+    }
+    .form-send__send{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .send-text{
+        width: 280px;
+        font-size: 10px;
+        line-height: 11px;
+        text-align: center;
+    }
+    .btn-send{
+        width: 280px;
+        height: 40px;
+        margin-bottom: 11px;
+    }
 }

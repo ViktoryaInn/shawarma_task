@@ -1,0 +1,66 @@
+.footer__wrap{
+    padding: 50px 0 84px;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+}
+
+.footer__info{
+}
+
+.info__copyright{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'UbuntuMedium';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.info__confidentiality{
+    font-family: 'UbuntuRegular';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer__menu{
+    margin-top: 15px;
+}
+
+.footer__menu a{
+    font-family: 'UbuntuMedium';
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.info__wrap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 128px;
+}
+
+.footer__links a{
+    margin-bottom: 40px;
+}
+
+.address{
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'UbuntuRegular';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.mail{
+    font-family: 'UbuntuMedium';
+    font-size: 24px;
+    line-height: 28px;
+}

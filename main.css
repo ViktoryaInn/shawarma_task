@@ -5,6 +5,8 @@
 @import "styles/catalog.css";
 @import "styles/form.css";
 
+@import "styles/footer.css";
+
 *{
     box-sizing: border-box;
 }
