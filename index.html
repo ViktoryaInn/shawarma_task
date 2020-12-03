@@ -10,7 +10,7 @@
     <header class="header">
         <div class="container header__container">
             <picture>
-                <source media="(max-width: 320px)" srcset="img/logo-shawarma-mobile.png">
+                <source media="(max-width: 767px)" srcset="img/logo-shawarma-mobile.png">
                 <img src="img/logo-shawarma.png" alt="logo shawarma">
             </picture>
             <nav class="header__menu">
@@ -33,10 +33,13 @@
     
     <section class="primary">
         <div class="container">
-            <div class="primary__wrap">
-                <h2 class="primary__title">Лучшая шаурма в&nbsp;городе. Доставим за&nbsp;15&nbsp;минут либо заказ за&nbsp;наш счет</h2>
-                <button class="button">проверить</button>
+            <div class="container__wrap">
+                <div class="primary__wrap">
+                    <h2 class="primary__title">Лучшая шаурма в&nbsp;городе. Доставим за&nbsp;15&nbsp;минут либо заказ за&nbsp;наш счет</h2>
+                    <button class="button">проверить</button>
+                </div>
             </div>
+            
         </div>
     </section>
 
@@ -115,32 +118,42 @@
         </div>
     </section>
 
-    <section></section> <!-- наши клиенты -->
+    <section class="clients">
+        <div class="container clients__wrap">
+            <h2 class="catalog__title">Наши клиенты</h2>
+            
+        </div>
+    </section>
 
-    <section></section> <!-- карта -->
+    <section class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed872c70934a32ced14d0cad452fba1fb5333e88884dc5da885fdeaa41117770&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section> 
 
     <footer class="footer">
         <div class="container footer__wrap">
             <div class="footer__info">
-                <img src="img/logo-shawarma.png" alt="logo shawarma"><br />
-                <span class="info__copyright">© 2009-2020</span>
-                <p class="info__confidentiality">Политика конфиденциальности<br />Копирование материалов запрещено</p>
+                <div class="info__wrap">
+                    <img src="img/logo-shawarma.png" alt="logo shawarma"><br />
+                    <span class="info__copyright">&copy; 2009-2020</span>
+                    <p class="info__confidentiality">Политика конфиденциальности<br />Копирование материалов запрещено</p>
+                </div>
+                <div class="footer__menu">
+                    <div class="menu_link">
+                        <a href="">Каталог</a>
+                    </div>
+                    <div class="menu_link">
+                        <a href="">Клиенты</a>
+                    </div>
+                    <div class="menu_link">
+                        <a href="">Заказывать</a>
+                    </div>
+                    <div class="menu_link">
+                        <a href="">О нас</a>
+                    </div>                
+                </div>
             </div>
-            <div class="footer__menu">
-                <div class="menu_link">
-                    <a href="">Каталог</a>
-                </div>
-                <div class="menu_link">
-                    <a href="">Заказывать</a>
-                </div>
-                <div class="menu_link">
-                    <a href="">Клиенты</a>
-                </div>
-                <div class="menu_link">
-                    <a href="">О нас</a>
-                </div>                
-            </div>
-            <div class="info__wrap">
+            
+            <div class="links__addresses">
                 <div class="footer__links">
                     <a href="">
                         <img src="img/vk 1.png" alt="vk">

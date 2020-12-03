@@ -4,7 +4,7 @@
 @import "styles/secondary.css";
 @import "styles/catalog.css";
 @import "styles/form.css";
-
+@import "styles/clients.css";
 @import "styles/footer.css";
 
 *{
@@ -44,6 +44,12 @@ h2{
 @media(max-width: 768px){
     .container{
         width: 100%;
+    }
+}
+
+@media(max-width: 767px){
+    .map{
+        display: none;
     }
 }
 

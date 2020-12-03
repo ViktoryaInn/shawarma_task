@@ -1,17 +1,22 @@
 .footer__wrap{
-    padding: 50px 0 84px;
+    padding: 80px 0 84px;
     display: flex;
     justify-content: space-between;
     color: #000000;
+    font-family: 'UbuntuMedium';
 }
 
 .footer__info{
+    display: flex;
+}
+
+.info__wrap{
+    margin-right: 176px;
 }
 
 .info__copyright{
     margin-top: 10px;
     margin-bottom: 20px;
-    font-family: 'UbuntuMedium';
     font-size: 24px;
     line-height: 28px;
 }
@@ -27,7 +32,6 @@
 }
 
 .footer__menu a{
-    font-family: 'UbuntuMedium';
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 15px;
@@ -35,10 +39,9 @@
     text-decoration: none;
 }
 
-.info__wrap{
+.links__addresses{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
 }
 
 .footer__links{
@@ -51,16 +54,84 @@
     margin-bottom: 40px;
 }
 
-.address{
-    margin: 0;
-    margin-bottom: 30px;
-    font-family: 'UbuntuRegular';
+.footer__links a img{
+    width: 75px;
+    height: 75px;
+}
+
+.footer__address{
     font-size: 24px;
     line-height: 28px;
 }
 
-.mail{
-    font-family: 'UbuntuMedium';
-    font-size: 24px;
-    line-height: 28px;
+.address{
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'UbuntuRegular';
+}
+
+@media(max-width: 992px){
+    .footer__wrap{
+        padding: 50px 40px 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__info{
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .info__wrap{
+        margin: 0;
+    }
+    .footer__menu{
+        width: 269px;
+        display: inline-block;
+        columns: 2;
+        justify-content: space-between;
+    }
+    .menu_link{
+        margin-bottom: 35px;
+    }
+    .links__addresses{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .footer__links{
+        width: 275px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__links a{
+        margin-bottom: 75px;
+    }
+    .footer__address{
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px){
+    .footer__wrap{
+        padding: 30px 20px 40px;
+    }
+    .footer__info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info__wrap{
+        text-align: center;
+    }
+    .footer__links{
+        width: 220px;
+    }
+    .footer__links a{
+        margin-bottom: 50px;
+    }
+    .address{
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
