@@ -1,0 +1,115 @@
+.modal__window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.modal__window--active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__wrap{
+    position: relative;
+    width: 850px;
+    background-color: #f3f3f3;
+}
+
+.modal__container{
+    padding: 90px 90px 67px;
+}
+
+.modal__close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.modal__close:before, .modal__close:after{
+    content: "";
+    top: 13px;
+    left: 0px;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+}
+
+.modal__close::before{
+    transform: rotate(45deg);
+}
+
+.modal__close::after{
+    transform: rotate(-45deg);
+}
+
+.modal__title{
+    font-size: 32px;
+    line-height: 37px;
+    margin: 0;
+    width: 669px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__form{
+    padding-top: 60px;
+}
+
+.modal__input{
+    margin-bottom: 35px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input__label{
+    margin: 0;
+    font-size: 34px;
+    line-height: 39px;
+}
+
+.modal__input input{
+    margin-left: 43px;
+    width: 425px;
+    height: 39px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+.modal__send{
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__text{
+    width: 231px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.modal__btn-send{
+    background-color: #181818;
+    width: 350px;
+    height: 75px;
+    border-radius: 37px;
+    font-family: 'UbuntuMedium';
+    font-size: 30px;
+    line-height: 34px;
+    color: #ffffff;
+}

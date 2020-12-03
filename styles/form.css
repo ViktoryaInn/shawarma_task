@@ -43,6 +43,14 @@
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #ffffff;
+    outline: none;
+    color: #ffffff;
+    font-family: 'UbuntuRegular';
+    transition: 0.4s;
+}
+
+.input:focus{
+    border-color: #E63E00;
 }
 
 .form-send__send{

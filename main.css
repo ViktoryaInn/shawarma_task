@@ -6,6 +6,7 @@
 @import "styles/form.css";
 @import "styles/clients.css";
 @import "styles/footer.css";
+@import "styles/modal_window.css";
 
 *{
     box-sizing: border-box;

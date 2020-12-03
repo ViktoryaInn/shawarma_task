@@ -35,6 +35,10 @@
     background-color: #C33500;
 }
 
+.button:focus{
+    outline: none;
+}
+
 @media(max-width: 992px){
     .primary{
         background-color: #ffffff;

@@ -1,3 +1,107 @@
 .clients__wrap{
     padding: 40px 20px 30px;
+    position: relative;
+}
+
+.clients__title{
+    margin-bottom: 30px;
+}
+
+.clients__slider{
+    margin: 0 -13px;
+}
+
+.clients__slider img{
+    padding: 0 13px;
+}
+
+.slick-next{
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    border-top: 4px solid #bbbbbb;
+    border-right: 4px solid #bbbbbb;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+    position: absolute;
+    top: -71px;
+    right: 20px;
+}
+
+.slick-next:hover{
+    border-color: #E63E00;
+}
+
+.slick-prev{
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    border-top: 4px solid #bbbbbb;
+    border-right: 4px solid #bbbbbb;
+    border-radius: 3px;
+    transform: rotate(-135deg);
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+    position: absolute;
+    top: -71px;
+    right: 47px
+}
+
+.slick-prev:hover{
+    border-color: #E63E00;
+}
+
+@media(max-width: 992px){
+    .clients{
+        background-color: #fff;
+    }
+    .clients__wrap{
+        padding-bottom: 35px;
+    }
+    .clients__slider{
+        margin: 0 -17px;
+    }
+    
+    .clients__slider img{
+        padding: 0 17px;
+    }
+}
+
+@media(max-width: 767px){
+    .clients__wrap{
+        padding: 30px 40px 30px;
+    }
+    .guests__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .clients__title{
+        width: 240px;
+        text-align: center;
+    }
+    .clients__title::before{
+        margin: 0;
+        margin-right: 15px;
+    }
+    .clients__title::after{
+        margin: 0;
+        margin-left: 15px;
+    }
+    .slick-next{
+        top: 50%;
+        right: -10px;
+    }
+    .slick-prev{
+        top: 50%;
+        left: -10px;
+    }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="main.css">
     <title>Shawarma</title>
 </head>
@@ -15,16 +16,16 @@
             </picture>
             <nav class="header__menu">
                 <div class="header__item">
-                    <a href="" class="header__link">Каталог</a>
+                    <a href="#_catalog" class="header__link">Каталог</a>
                 </div>
                 <div class="header__item">
-                    <a href="" class="header__link">Заказать</a>
+                    <a href="#_form" class="header__link">Заказать</a>
                 </div>
                 <div class="header__item">
-                    <a href="" class="header__link">Клиенты</a>
+                    <a href="#_clients" class="header__link">Клиенты</a>
                 </div>
                 <div class="header__item">
-                    <a href="" class="header__link">О нас</a>
+                    <a href="#_footer" class="header__link">О нас</a>
                 </div>
             </nav>
             <button class="header_hamburger hamburger"></button>
@@ -59,9 +60,9 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="_catalog">
         <div class="container catalog__wrap">
-            <h2 class="catalog__title">каталог</h2>
+            <h2 class="catalog__title" >каталог</h2>
             <div class="catalog__list">
                 <div class="list__wrap">
                     <div class="catalog__list__item">
@@ -96,10 +97,10 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="_form">
         <div class="container form__wrap">
             <form action="" class="form-send">
-                <h3 class="form-send__title">Оставьте заявку</h3>
+                <h3 class="form-send__title" >Оставьте заявку</h3>
                 <div class="form-send__form">
                     <div class="form-send__input">
                         <p class="input__label">Имя</p>
@@ -118,10 +119,21 @@
         </div>
     </section>
 
-    <section class="clients">
+    <section class="clients" id="_clients">
         <div class="container clients__wrap">
-            <h2 class="catalog__title">Наши клиенты</h2>
-            
+            <div class="guests__title">
+                <h2 class="catalog__title clients__title" >Наши клиенты</h2>
+            </div>
+            <div class="clients__slider">
+                <img src="img/1 1.png" alt="client photo">
+                <img src="img/2 1.png" alt="client photo">
+                <img src="img/3 1.png" alt="client photo">
+                <img src="img/4 1.png" alt="client photo">
+                <img src="img/1 1.png" alt="client photo">
+                <img src="img/2 1.png" alt="client photo">
+                <img src="img/3 1.png" alt="client photo">
+                <img src="img/4 1.png" alt="client photo">
+            </div>
         </div>
     </section>
 
@@ -129,9 +141,9 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed872c70934a32ced14d0cad452fba1fb5333e88884dc5da885fdeaa41117770&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=true"></script>
     </section> 
 
-    <footer class="footer">
+    <footer class="footer" id="_footer">
         <div class="container footer__wrap">
-            <div class="footer__info">
+            <div class="footer__info" >
                 <div class="info__wrap">
                     <img src="img/logo-shawarma.png" alt="logo shawarma"><br />
                     <span class="info__copyright">&copy; 2009-2020</span>
@@ -139,16 +151,16 @@
                 </div>
                 <div class="footer__menu">
                     <div class="menu_link">
-                        <a href="">Каталог</a>
+                        <a href="#_catalog">Каталог</a>
                     </div>
                     <div class="menu_link">
-                        <a href="">Клиенты</a>
+                        <a href="#_clients">Клиенты</a>
                     </div>
                     <div class="menu_link">
-                        <a href="">Заказывать</a>
+                        <a href="#_form">Заказывать</a>
                     </div>
                     <div class="menu_link">
-                        <a href="">О нас</a>
+                        <a href="#_footer">О нас</a>
                     </div>                
                 </div>
             </div>
@@ -156,10 +168,10 @@
             <div class="links__addresses">
                 <div class="footer__links">
                     <a href="">
-                        <img src="img/vk 1.png" alt="vk">
+                        <img src="img/vk 1.png" onmouseover="this.src='img/vk-active.png'" onmouseout="this.src='img/vk 1.png'" alt="vk">
                     </a>
                     <a href="">
-                        <img src="img/inst 1.png" alt="inst">
+                        <img src="img/inst 1.png" onmouseover="this.src='img/inst-active.png'" onmouseout="this.src='img/inst 1.png'" alt="inst">
                     </a>
                 </div>
                 <div class="footer__address">
@@ -170,6 +182,35 @@
             
         </div>
     </footer>
+
+    <div class="modal__window">
+        <div class="modal__wrap">
+                <button class="modal__close"></button>
+            <div class="modal__container">
+                <h2 class="modal__title">оставьте заявку!<br />
+                    я&nbsp;позвоню вам в&nbsp;ближайшее время</h2>
+                <form class="modal__form">
+                    <div class="modal__input">
+                        <p class="input__label">Имя</p>
+                        <input type="text">
+                    </div>
+                    <div class="modal__input">
+                        <p class="input__label">Телефон</p>
+                        <input type="text">
+                    </div>
+                    <div class="modal__send">
+                        <p class="modal__text">*Нажимая кнопку, я даю свое согласение на обработку персональных данных</p>
+                        <button class="modal__btn-send">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
