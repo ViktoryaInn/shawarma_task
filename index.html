@@ -71,7 +71,7 @@
                         <p class="item__text">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежие огурцы, хрустящий салат, маринованный красный лук, свежая зелень, маринованные огурцы и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="item__buy">
                             <p class="item__price">от 180</p>
-                            <button class="button">заказать</button>
+                            <button class="button" onclick="toOrder('Классическая')">заказать</button>
                         </div>
                     </div>
                     <div class="catalog__list__item">
@@ -80,7 +80,7 @@
                         <p class="item__text">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежие огурцы, хрустящий салат, маринованные огурцы с&nbsp;добавлением острых перчиков халапеньо и&nbsp;картофеля пай и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="item__buy">
                             <p class="item__price">от 240</p>
-                            <button class="button">заказать</button>
+                            <button class="button" onclick="toOrder('Фирменная')">заказать</button>
                         </div>
                     </div>
                     <div class="catalog__list__item">
@@ -89,7 +89,7 @@
                         <p class="item__text">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежая зелень, сыр моцарелла, сочные ломтики бекона с&nbsp;добавлением острых перчиков халапеньо и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="item__buy">
                             <p class="item__price">от 210</p>
-                            <button class="button">заказать</button>
+                            <button class="button" onclick="toOrder('Мексиканская')">заказать</button>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                         <a href="#_clients">Клиенты</a>
                     </div>
                     <div class="menu_link">
-                        <a href="#_form">Заказывать</a>
+                        <a href="#_form">Заказать</a>
                     </div>
                     <div class="menu_link">
                         <a href="#_footer">О нас</a>
@@ -187,15 +187,19 @@
         <div class="modal__wrap">
                 <button class="modal__close"></button>
             <div class="modal__container">
-                <h2 class="modal__title">оставьте заявку!<br />
-                    я&nbsp;позвоню вам в&nbsp;ближайшее время</h2>
+                <p class="modal__title">оСТАВЬТЕ ЗАЯВКУ. НАШ МЕНЕДЖЕР позвонит Вам<br />
+                    в&nbsp;ТЕЧЕНИЕ 5&nbsp;МИНУТ</p>
                 <form class="modal__form">
                     <div class="modal__input">
-                        <p class="input__label">Имя</p>
-                        <input type="text">
+                        <p class="modal_input__label">Название</p>
+                        <input type="text" id="designation">
                     </div>
                     <div class="modal__input">
-                        <p class="input__label">Телефон</p>
+                        <p class="modal_input__label">Имя</p>
+                        <input type="text" id="clientName">
+                    </div>
+                    <div class="modal__input">
+                        <p class="modal_input__label">Телефон</p>
                         <input type="text">
                     </div>
                     <div class="modal__send">

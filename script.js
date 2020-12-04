@@ -6,8 +6,6 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("hamburger--active");
 });
 
-
-
 $('.clients__slider').slick({
     infinite: true,
     speed: 300,
@@ -30,42 +28,53 @@ $('.clients__slider').slick({
           infinite: true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
-  let menuLinks = document.querySelectorAll('.header__link');
-  let footerMenuLinks = document.querySelectorAll('.menu_link a');
-  
-  window.onload = function(){
-      scrollToSection(menuLinks);
-      scrollToSection(footerMenuLinks);
-  }
+let menuLinks = document.querySelectorAll('.header__link');
+let footerMenuLinks = document.querySelectorAll('.menu_link a');
 
-//   for(let menuLink of menuLinks){
-//       menuLink.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         let scrollToElem = menuLink.getAttribute('href');
-//         let coordinates = document.querySelector(scrollToElem).offsetTop;
-//         window.scrollTo({
-//             top: coordinates - 100,
-//             behavior: "smooth"
-//         });
-//       });
-//   }
+window.onload = function(){
+    scrollToSection(menuLinks);
+    scrollToSection(footerMenuLinks);
+}
 
-  function scrollToSection(listItems){
-      for(let item of listItems){
-          item.addEventListener('click', (e) => {
-              e.preventDefault();
-              let scrollToElem = item.getAttribute('href');
-              let coordinates = document.querySelector(scrollToElem).offsetTop;
-              window.scrollTo({
-                  top: coordinates - 100,
-                  behavior: "smooth"
-              });
-          });
-      }
-  }
+function scrollToSection(listItems){
+    for(let item of listItems){
+        item.addEventListener('click', (e) => {
+            if(menu.matches('.header__menu--active')){
+                menu.classList.toggle("header__menu--active");
+                hamburger.classList.toggle("hamburger--active");
+            }
+            e.preventDefault();
+            let scrollToElem = item.getAttribute('href');
+            let coordinates = document.querySelector(scrollToElem).offsetTop;
+            window.scrollTo({
+                top: coordinates - 100,
+                behavior: "smooth"
+            });
+        });
+    }
+}
+
+let modalWindow = document.querySelector('.modal__window');
+
+function toOrder(str){
+    modalWindow.classList.toggle('modal__window--active');
+    let shawaLabel = document.getElementById('designation');
+    shawaLabel.value = str;
+    let clientName = document.getElementById('clientName');
+    clientName.focus();
+}
+
+window.addEventListener('click', (e) => {
+    if(e.target == modalWindow){
+        modalWindow.classList.toggle('modal__window--active');
+    }
+});
+
+let closeButton = document.querySelector('.modal__close');
+
+closeButton.addEventListener('click', () => {
+    modalWindow.classList.toggle('modal__window--active');
+});
